@@ -1,6 +1,6 @@
 import random
 
-rnum random.randint(1, 100)
+rnum = random.randint(1, 100)
 
 count = 0
 
@@ -12,14 +12,39 @@ while True :
     
       num = int(num)
     
-      count + = 1
+      count += 1
       
-      if num = = rnum:
+      if num == rnum:
           
           print('yes,{} is right;you guess {} times' .format(num, count))
           
           ask = input('would you like play again(y/n): \n').strip().lower()
           
-          if ask = = 'y' :
+          if ask == 'y' :
+              
+              continue
+          
+          else :
+              
+              break
+          
+          break
+      
+      elif num > rnum:
+          
+          print('you number is too larger!' )
+          
+          continue
+      
+      else :
+            
+          print('you number is too small!' )
+          
+          continue
+    else :
+          
+          print('you number is invalid,please enter again' )
+          
+          continue
     
     
