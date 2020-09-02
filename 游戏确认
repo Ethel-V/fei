@@ -1,0 +1,25 @@
+import random
+
+rnum random.randint(1, 100)
+
+count = 0
+
+while True :
+    
+    num = input('please enter a number(1,100):\n').strip()
+    
+    if num.isdigit():
+    
+      num = int(num)
+    
+      count + = 1
+      
+      if num = = rnum:
+          
+          print('yes,{} is right;you guess {} times' .format(num, count))
+          
+          ask = input('would you like play again(y/n): \n').strip().lower()
+          
+          if ask = = 'y' :
+    
+    
